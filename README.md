@@ -1,1 +1,1 @@
-# Assessing trade‐offs in utilising BB84 vs B92
+# Assessing Trade‐offs in Utilising BB84 VS B92
