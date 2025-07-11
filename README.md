@@ -11,3 +11,46 @@ The project integrates quantum theory with statistical simulation and visualizat
 
 ### Key Skills:
 Quantum Cryptography · Python · Monte Carlo Simulation · Data Visualization · Information Security · Quantum Algorithms
+
+**Ideal Case**
+- Simulate BB84 protocol without any noise or eavesdropping.
+- **Metrics used**:
+  - `Raw key length`
+  - `Sifted key length`
+  - `Key retention rate` (sifted/raw)
+  - `Quantum Bit Error Rate (QBER)` — expected to be near 0%
+  - `Expected error rate`: 0.0 (baseline)
+
+---
+
+**Noise Case**
+- **Noise models used**:
+  - Bit flip
+  - Phase flip
+  - Depolarizing noise
+  - Amplitude damping
+- **Metrics used**:
+  - `QBER` (expected to increase under noise)
+  - `Key retention rate`
+  - `Error rate deviation` from ideal
+  - `Statistical detection` of abnormal error rates
+
+---
+
+**Eavesdropping Case**
+- **Eavesdropping models used**:
+  - Intercept-resend attack
+  - Breidbart basis attack
+  - Variable interception probability and basis strategies
+- **Metrics used**:
+  - `QBER`
+  - `Eve detection statistics`:
+    - `Eve detected` (boolean)
+    - `Detection confidence`
+    - `P-value` (from binomial test)
+  - `Intercepted fraction` (of sifted bits)
+  - `Security breach rate` (QBER > threshold, e.g., 11%)
+  - **Attack effectiveness**:
+    - `Information gain` (from Eve)
+    - `Stealth score` = 1 − detection rate
+    - `Disturbance score` = QBER
