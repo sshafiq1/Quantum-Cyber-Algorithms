@@ -12,6 +12,8 @@ The project integrates quantum theory with statistical simulation and visualizat
 ### Key Skills:
 Quantum Cryptography · Python · Monte Carlo Simulation · Data Visualization · Information Security · Quantum Algorithms
 
+### Notebook Breakdown:
+
 **Ideal Case**
 - Simulate BB84 protocol without any noise or eavesdropping.
 - **Metrics used**:
